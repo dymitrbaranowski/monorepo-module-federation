@@ -1,0 +1,33 @@
+.button {
+  background: #4caf50; /* Green */
+  border: none; /* Remove borders */
+
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Get the elements to line up properly */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Add some margin */
+
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px; /* Rounded corners */
+}
+
+.value {
+  font-size: 5.5em;
+  // font: 1em sans-serif;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.icon {
+  font-size: 1.5em;
+  color: greenyellow;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5em;
+  display: inline-block;
+}
