@@ -1,6 +1,8 @@
 import path from "path";
 import webpack from "webpack";
 import {BuildMode, BuildPaths, BuildPlatform, buildWebpack} from '@packages/build-config'
+import  PackageJson from "./package.json";
+
 
 interface EnvVariables {
   mode?: BuildMode; // 'development' | 'production'
@@ -12,7 +14,7 @@ interface EnvVariables {
 export default (env: EnvVariables) => {
   const paths: BuildPaths = {
     output: path.resolve(__dirname, "build"),
-    entry: path.resolve(__dirname, "src", "index.tsx"),
+    entry: path.resolve(__dirname, "src", "bootstrap.tsx"),
     html: path.resolve(__dirname, "public", "index.html"),
     public: path.resolve(__dirname, "public"),
 
@@ -26,6 +28,11 @@ export default (env: EnvVariables) => {
     analyzer: env.analyzer,
     platform: env.platform ?? "desktop",
   });
+
+
+  config.plugins.push(new webpack.container.ModuleFederationPlugin({
+
+  }))
   return config;
 };
 
