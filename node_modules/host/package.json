@@ -9,7 +9,7 @@
     "react-router-dom": "^6.16.0"
   },
   "scripts": {
-    "start": "webpack serve --env mode=development --open",
+    "start": "webpack serve --env mode=development",
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
     "build:mobile": "webpack --env mode=production --env platform=mobile",

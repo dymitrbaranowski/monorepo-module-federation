@@ -4,8 +4,7 @@
   "workspaces": [
     "packages/*",
     "services/*"
-  ],
-  "dependencies": {
-    "type-fest": "^4.40.0"
-  }
+  ]
+
+
 }

@@ -25,8 +25,8 @@ export default (env: EnvVariables) => {
   const SHOP_REMOTE_URL = env.SHOP_REMOTE_URL ?? 'http://localhost:3001';
   const ADMIN_REMOTE_URL = env.ADMIN_REMOTE_URL ?? 'http://localhost:3002';
 
-  const config:webpack.Configuration = buildWebpack({
-    port: env.port ?? 3000,
+  const config: webpack.Configuration = buildWebpack({
+    port: env.port ?? 3004,
     mode: env.mode ?? "development",
     paths,
     analyzer: env.analyzer,
@@ -46,15 +46,15 @@ export default (env: EnvVariables) => {
       ...packageJson.dependencies,
       react: {
         eager: true,
-        // requiredVersion: packageJson.dependencies['react'],
+        requiredVersion: packageJson.dependencies['react'],
       },
       'react-router-dom': {
         eager: true,
-        // requiredVersion: packageJson.dependencies['react-router-dom'],
+        requiredVersion: packageJson.dependencies['react-router-dom'],
       },
       'react-dom': {
         eager: true,
-        // requiredVersion: packageJson.dependencies['react-dom'],
+        requiredVersion: packageJson.dependencies['react-dom'],
       },
     },
   }))

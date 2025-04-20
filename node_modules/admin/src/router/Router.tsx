@@ -11,13 +11,8 @@ const routes = [
         children: [
             {
                 path: "/about",
-                element: (
-                    <Suspense fallback={"Loading..."}>
-                        <LazyAbout />
-                    </Suspense>
-                ),
+                element: <Suspense fallback={"Loading..."}><LazyAbout /></Suspense>
             },
-
         ],
     },
 ]

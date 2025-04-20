@@ -7,6 +7,8 @@ import { buildBabelLoader } from "./babel/buildBabelLoader";
 
 export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
   const isDev = options.mode === "development";
+  const isProd = options.mode === 'production';
+
 
   const assetLoader = {
     test: /\.(png|jpg|jpeg|gif)$/i,
