@@ -4,7 +4,7 @@ import {Suspense} from "react";
 import {Shop} from "@/pages/Shop";
 
 
-const routes = [
+export const routes = [
     {
         path: "/",
         element: <App />,

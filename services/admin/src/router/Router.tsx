@@ -16,7 +16,6 @@ const routes = [
                         <LazyAbout />
                     </Suspense>
                 ),
-                // element: <About />,
             },
 
         ],

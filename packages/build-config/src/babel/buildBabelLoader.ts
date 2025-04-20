@@ -11,7 +11,7 @@ export function buildBabelLoader({ mode }: BuildOptions) {
     plugins.push([
       removeDataTestIdBabelPlugin,
       {
-        props: ["data-testid"],
+        props: ["data-tested"],
       },
     ]);
   }
