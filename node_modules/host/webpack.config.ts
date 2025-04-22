@@ -26,7 +26,7 @@ export default (env: EnvVariables) => {
   const ADMIN_REMOTE_URL = env.ADMIN_REMOTE_URL ?? 'http://localhost:3002';
 
   const config: webpack.Configuration = buildWebpack({
-    port: env.port ?? 3006,
+    port: env.port ?? 3000,
     mode: env.mode ?? "development",
     paths,
     analyzer: env.analyzer,
